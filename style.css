@@ -1,0 +1,225 @@
+@font-face {
+    font-family: Barbra;
+    src: url(Barbra-High.ttf);
+}
+:root {
+  --f-color: #000;
+ --s-color: #D9D9D9;
+
+}
+button {
+  padding: 1.3em 4em;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  border-radius: 20px;
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none ;
+  font-family: "Barbra";
+  border: none;
+  margin-top: 2em !important;
+}
+.btnblack {
+  color: #fff;
+  background-color: #000;
+}
+.btnblack:hover{
+  color: #000;
+  background-color: #D9D9D9;
+}
+/* max-width:768px */
+@media(max-width:768px){
+  .title {
+      font-size: 25px !important;
+      margin-bottom: 2em !important;
+  }
+  .content {
+      width: calc(100% - 2em) !important;
+      padding: 1.5em 2em;
+  }
+  .nombreLigne {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+ }
+ .nombreLigne input {
+  margin: auto;
+ }
+
+  .nombreLigne h3 {
+    font-size:20px !important ;
+    padding-bottom: 10px;
+    margin-bottom: 10px !important;
+
+  }
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #D9D9D9;
+  
+}
+.titleContainer {
+  width: 100%;
+  height: fit-content;
+  background-color: var(--s-color)       ;
+  text-align: center;
+}
+.title {
+    font-family: "Barbra";
+    padding: 2em;
+    line-height: 1em;
+    font-size: 40px;
+}
+
+.content {
+    width: calc(100% - 8em);
+    height: fit-content;
+    background: var(--f-color);
+    color: #fff;
+    position: relative;
+    padding: 2em 3em;
+    border-radius: 20px;
+    margin: auto;
+
+ }
+
+.content h3 {
+    font-family: "Barbra";
+    font-size: 40px;
+}
+.content p {
+    font-size: 20px;
+    padding: 1.5em 0;
+    line-height: 1.5;
+
+}
+.content .btn {
+    width: 100%;
+    text-align: center;
+}
+.content .btn button {
+    background-color: var(--s-color);
+
+}
+
+.content .btn button:hover {
+    background-color: #000;
+    color: #fff;
+    transform: translateY(-7px);
+  }
+.by {
+    width: 100%;
+    height: 50px;
+    z-index: 9;
+    background-color: #D9D9D9       ;
+    margin-top: 2em;
+    text-align: center;
+}
+.name {
+    font-weight: 700;
+
+  }
+  .homePage{
+    width: 100%;
+    height: 100vh;
+  }
+ /* animation  */
+
+  .tracking-in-expand {
+	-webkit-animation: tracking-in-expand 1.2s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+	        animation: tracking-in-expand 1.2s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+}
+
+
+
+ @-webkit-keyframes tracking-in-expand {
+    0% {
+      letter-spacing: -0.5em;
+      opacity: 0;
+    }
+    40% {
+      opacity: 0.6;
+  
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @keyframes tracking-in-expand {
+    0% {
+      letter-spacing: -0.5em;
+      opacity: 0;
+    }
+    40% {
+      opacity: 0.6;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  .slide-top {
+	-webkit-animation: slide-top 1.2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: slide-top 1.2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+ @-webkit-keyframes slide-top {
+    0% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+    }
+    100% {
+      -webkit-transform: translateY(-50px);
+              transform: translateY(-50px);
+    }
+  }
+  @keyframes slide-top {
+    0% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+    }
+    100% {
+      -webkit-transform: translateY(-50px);
+              transform: translateY(-50px);
+    }
+  }
+
+/* page2 */
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Barbra";
+    background-color: #D9D9D9;
+}
+.cntr {
+  width: 100%;
+  height: 100vh;
+}
+.nombreLigne h3 {
+  display: inline-block;
+  margin-top: -20px;
+}
+.nombreLigne button{
+    display:block;
+    margin:auto;
+ }
+ input{
+  width: 46px;
+  height: 35px;
+  font-size: 22px; 
+}
+ 
+ @media(max-width:768px){
+  input{
+  width: 32px;
+  height: 28px;
+  font-size: 19px; 
+  }
+}
+
